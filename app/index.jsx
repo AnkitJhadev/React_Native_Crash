@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router'
 
-const RootLayout = () => {
+const Welcome = () => {
   return (
-    <View>
+    <View className="flex-1 items-center justify-center">
       <Text>index</Text>
+      <Link href="/profile">Go to Profile</Link>
     </View>
   )
 }
 
-export default RootLayout
-
-const styles = StyleSheet.create({})
+export default Welcome
